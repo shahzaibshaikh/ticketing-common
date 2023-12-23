@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "del-cli": "^5.1.0"
+  }
 }
