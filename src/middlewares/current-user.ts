@@ -14,7 +14,7 @@ declare global {
   }
 }
 
-const currentUser = (req: Request, res: Response, next: NextFunction) => {
+export const currentUser = (req: Request, res: Response, next: NextFunction) => {
   if (!req.session?.jwt) {
     return next();
   }
@@ -25,5 +25,3 @@ const currentUser = (req: Request, res: Response, next: NextFunction) => {
   } catch (error) {}
   next();
 };
-
-export default currentUser;
